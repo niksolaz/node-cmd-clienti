@@ -3,6 +3,7 @@ const chalk = require('chalk');
 const get = require('./cmd/get');
 const add = require('./cmd/add');
 const del = require('./cmd/del');
+const all = require('./cmd/all');
 
 console.log('\n');
 console.log(chalk.magenta.inverse('#####################################################################\n'));
@@ -23,5 +24,6 @@ console.log(chalk.magenta.inverse('#############################################
 get(yargs);
 add(yargs);
 del(yargs);
+all(yargs);
 
 yargs.parse();

@@ -29,14 +29,23 @@ node app.js del --nome=[insert name]
 
 ```
 
+## ALL CLIENT
+
+```
+node app.js all --l
+
+```
+
 # For Testing app:  node app.js COMMAND --[ARG KEY]=[ARG VALUE]
 
 # List COMMAND:
          1 - get         get client
          2 - add         add client
          3 - del         delete client
+         3 - all         all clients
 
 # List [ARG KEY]:
          --nome          --nome=[insert nome]
          --email         --email=[insert email]
          --telefono      --telefono=[insert phone]
+         --l             only for command all
