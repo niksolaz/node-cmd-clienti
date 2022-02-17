@@ -15,11 +15,13 @@ console.log(chalk.blue.bold('For Testing app: '), chalk.yellow.bold('node app.js
 console.log(chalk.blue.bold('List [COMMAND]:'));
 console.log(chalk.yellow.bold('\t 1 - get\t'),'get client');
 console.log(chalk.yellow.bold('\t 2 - add\t'),'add client');
-console.log(chalk.yellow.bold('\t 3 - del\t'),'delete client\n');
+console.log(chalk.yellow.bold('\t 3 - del\t'),'delete client');
+console.log(chalk.yellow.bold('\t 3 - all\t'),'all clients\n');
 console.log(chalk.blue.bold('List [ARG KEY]:'));
 console.log(chalk.yellow.bold('\t --nome \t'), '--nome=[insert nome]');
 console.log(chalk.yellow.bold('\t --email\t'), '--email=[insert email]');
-console.log(chalk.yellow.bold('\t --telefono\t'), '--telefono=[insert phone]\n');
+console.log(chalk.yellow.bold('\t --telefono\t'), '--telefono=[insert phone]');
+console.log(chalk.yellow.bold('\t --l\t\t'), '--l >>> only for COMMAND "all"\n');
 console.log(chalk.magenta.inverse('#####################################################################\n'));
 get(yargs);
 add(yargs);
